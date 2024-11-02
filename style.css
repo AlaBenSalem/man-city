@@ -1,0 +1,195 @@
+/* General styling */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  color: #333;
+  background-color: #f4f4f9;
+}
+
+header {
+  text-align: center;
+  padding: 20px;
+  background-color:skyblue;
+  color: white;
+  font-family: Times, serif;
+}
+
+.fancy-title img {
+  width: 50px;
+  vertical-align: middle;
+}
+
+.fancy-title {
+  font-size: 1.8em;
+}
+
+nav {
+  text-align: center;
+  padding: 10px;
+  background-color: #204080;
+}
+
+nav a {
+  margin: 0 10px;
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+  transition: color 0.3s;
+}
+
+nav a:hover {
+  color: skyblue;
+}
+
+/* Product Section */
+.products {
+  display: flex;
+  justify-content: space-around;
+  padding: 20px;
+}
+
+.product {
+  text-align: center;
+  width: 400px;
+  padding: 80px;
+  background-color: #fff;
+  border-radius: 8px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.product a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.product:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.product img {
+  width: 100%;
+  height: auto;
+  border-radius: 5px;
+}
+
+.product h3 {
+  font-size: 1.2em;
+  color: #004d99;
+  margin-top: 10px;
+}
+
+.price {
+  font-weight: bold;
+  color: #ff6600;
+}
+
+/* Footer styling */
+footer {
+  text-align: center;
+  padding: 15px;
+  background-color: #204080;
+  color: white;
+}
+
+
+
+
+
+
+/* Fancy Title Style */
+.fancy-title {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 15px;
+      font-size: 2.5em;
+      color: white;
+      margin-top: 20px;
+      font-weight: bold;
+      position: relative;
+      letter-spacing: 0.7cm;
+  }
+
+  .fancy-title img {
+      width: 70px;
+      height: auto;
+  }
+
+  /* Animated underline effect */
+  .fancy-title::after {
+      content: "";
+      position: absolute;
+      width: 0;
+      height: 4px;
+      bottom: -5px;
+      left: 0;
+      background-color: #204080;
+      transition: width 0.5s;
+  }
+
+  .fancy-title:hover::after {
+      width: 100%;
+      ;
+  }
+
+  body {
+      font-family: Arial, sans-serif;
+      background-color: #f0f0f0;
+      margin: 0;
+      padding: 0;
+  }
+  header {
+
+      color: white;
+      padding: 20px;
+      text-align: center;
+  }
+  .container {
+      max-width: 1000px;
+      margin: 20px auto;
+      padding: 20px;
+      background-color: #fff;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  h1 {
+      color:azure
+  }
+  .club {
+      position: relative;
+      padding: 20px;
+      margin-bottom: 20px;
+      border-radius: 10px;
+      color: white;
+      text-align: center;
+      background-size: cover;
+      background-position: center;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  }
+  .club h2 {
+      margin: 10px 0;
+      font-size: 24px;
+  }
+  .club p {
+      margin: 5px 0;
+      font-size: 18px;
+  }
+  a{
+      color: white;
+  }
+  .logo {
+      width: 80px;
+      height: auto;
+      margin-bottom: 10px;
+  }
+  /* Background images for each club */
+  .manchester-city { background-image: url('city theme.png'); }
+  .manchester-united { background-image: url('man utd b.png'); }
+  .arsenal { background-image: url('arsenal.png'); }
+  .liverpool { background-image: url('liverpool theme.png'); }
+  .chelsea { background-image: url('chelsea_banner.png'); }
+  .tottenham { background-image: url('totenhamt.png'); }
+  .newcastle { background-image: url('new castle.png');
+color: gray; }
+  .aston-villa { background-image: url('aston.png'); }

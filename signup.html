@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up - Manchester City Fan Page</title>
+    <style>
+        /* General Page Style */
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+        }
+        
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background: linear-gradient(135deg, #006dbf, #004b85);
+            color: #fff;
+        }
+        
+        .signup-container {
+            background-color: #f4f4f4;
+            color: #333;
+            border-radius: 12px;
+            width: 100%;
+            max-width: 400px;
+            padding: 20px;
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+            text-align: center;
+        }
+
+        .signup-container img {
+            width: 100px;
+            margin-bottom: 10px;
+        }
+
+        .signup-header {
+            font-size: 1.5em;
+            margin-bottom: 10px;
+            color: #006dbf;
+        }
+
+        .signup-form {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+            margin-top: 20px;
+        }
+
+        .signup-form input[type="text"],
+        .signup-form input[type="email"],
+        .signup-form input[type="password"],
+        .signup-form select {
+            padding: 12px;
+            font-size: 1em;
+            border-radius: 8px;
+            border: 1px solid #ddd;
+            width: 100%;
+        }
+
+        .signup-form input[type="checkbox"] {
+            display: inline-block;
+            margin-right: 8px;
+        }
+
+        .signup-form .checkbox-label {
+            font-size: 0.9em;
+            display: flex;
+            align-items: center;
+        }
+
+        .signup-form button {
+            background-color: #006dbf;
+            color: #fff;
+            padding: 12px;
+            font-size: 1em;
+            font-weight: bold;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        .signup-form button:hover {
+            background-color: #004b85;
+        }
+
+        .additional-links {
+            margin-top: 10px;
+            font-size: 0.9em;
+        }
+
+        .additional-links a {
+            color: #006dbf;
+            text-decoration: none;
+        }
+
+        .additional-links a:hover {
+            text-decoration: underline;
+        }
+        
+        /* Fan Features Section */
+        .fan-features {
+            margin-top: 20px;
+            padding-top: 10px;
+            border-top: 1px solid #ddd;
+            font-size: 0.85em;
+            text-align: left;
+        }
+        
+        .fan-features ul {
+            list-style-type: none;
+            padding: 0;
+            color: #333;
+        }
+
+        .fan-features li {
+            margin-bottom: 5px;
+            display: flex;
+            align-items: center;
+            color: #006dbf;
+        }
+
+        .fan-features li::before {
+            content: "⚽";
+            margin-right: 8px;
+        }
+
+
+        img{
+            width:400%;
+            
+            
+        }
+
+        /* Social Media Icons */
+        .social-media {
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+            margin-top: 20px;
+        }
+
+        .social-media a {
+            color: #006dbf;
+            text-decoration: none;
+            font-size: 1.5em;
+            transition: color 0.3s ease;
+        }
+
+        .social-media a:hover {
+            color: #004b85;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="signup-container">
+        <!-- Logo -->
+        <img src="logo_city.png" alt="Manchester City Logo">
+        
+        <!-- Header -->
+        <h2 class="signup-header">Join the Cityzens Hub</h2>
+        
+        <!-- Sign-Up Form -->
+        <form class="signup-form">
+            <input type="text" placeholder="Full Name" required>
+            <input type="email" placeholder="Email Address" required>
+            <input type="password" placeholder="Create Password" required>
+            <select required>
+                <option value="" disabled selected>Favorite Player</option>
+                <option value="Haaland">Erling Haaland</option>
+                <option value="De Bruyne">Kevin De Bruyne</option>
+                <option value="Foden">Phil Foden</option>
+                <option value="Walker">Kyle Walker</option>
+            </select>
+            <div class="checkbox-label">
+                <input type="checkbox" required>
+                <span>I agree to the <a href="#">Terms & Conditions</a></span>
+            </div>
+            <button type="submit">Sign Up</button>
+        </form>
+
+        <!-- Additional Links -->
+        <div class="additional-links">
+            <p>Already have an account? <a href="index.html">Log in</a></p>
+            <p>Need help? <a href="#">Contact Support</a></p>
+        </div>
+
+        <!-- Fan Features -->
+        <div class="fan-features">
+            <p>Become a Cityzens Hub member and enjoy:</p>
+            <ul>
+                <li>Exclusive Manchester City content and news</li>
+                <li>Personalized fan profile and loyalty points</li>
+                <li>Early access to tickets for top matches</li>
+                <li>Special discounts on merch and tickets</li>
+            </ul>
+        </div>
+
+        <!-- Social Media Icons -->
+        <div class="social-media">
+            <a href="https://facebook.com" target="_blank" title="Facebook"><img src="facebook.webp" alt="Facebook Icon" width="10"></a>
+            <a href="https://instagram.com" target="_blank" title="Instagram"><img src="instagram.png" alt="Instagram Icon" width="2"></a>
+            <a href="https://wa.me/your_number" target="_blank" title="WhatsApp"><img src="whatss.jpg" alt="WhatsApp Icon" ></a>
+        </div>
+    </div>
+
+</body>
+</html>
